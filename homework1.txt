@@ -1,0 +1,407 @@
+// 5'ten 100'e kadar beser beser artarak yazdiran program
+
+#include <stdio.h>
+
+main()
+{
+	int i = 0;
+	
+	for (i=0; i<=100; i=i+5)
+	{
+		printf("%d\n", i);
+	}
+
+} 
+
+------------------------------------------------------------
+
+// Fahrenheit to celcius
+
+#include <stdio.h>
+
+main(){
+	
+	int F, C;
+	
+	printf("F cinsinden dereceyi girin:");
+	scanf("%d", &F);
+	
+	C = (F - 32) /1.8;
+	
+	printf("Celsius = %d", C);
+	
+}
+
+
+---------------------------------------------
+
+// Fahrenheit'ý Celsius'a çeviren program
+
+#include <stdio.h>
+
+main(){
+	
+	int F, C;
+	
+	printf("F cinsinden dereceyi girin:");
+	scanf("%d", &F);
+	
+	C = (F - 32) /1.8;
+	
+	printf("Celsius = %d", C);
+	
+}
+
+-------------------------------------------------
+
+
+//1000-2000 arasindaki cift sayıları ve toplamlarini ekrana yazdiran program
+
+#include <stdio.h>
+
+main()
+{
+	int sayi = 1000, toplam = 0;
+	
+		while (sayi<2000)
+		{
+			sayi+=2;
+			printf("%d\n", sayi);
+			toplam = sayi*(sayi+1);
+		}
+			printf("Toplam: %d\n", toplam);	
+			
+}
+
+
+-----------------------------------------------------------
+
+//cift tek bulan program
+
+#include <stdio.h>	
+
+main(){
+	
+	int sayi;
+	
+	printf("Sayiyi Giriniz:");
+	scanf("%d", &sayi);
+	
+	if (sayi%2==0){
+		printf("Sayi Cifttir");
+	}
+	else{
+		printf("Sayi Tektir");
+	}
+	
+	
+}
+
+---------------------------------------------------
+
+
+// Faktoriyel hesaplama programi
+
+#include <stdio.h>
+
+main(){
+	
+	int i, sayi, faktoriyel;
+	
+	printf("Faktoriyeli Hesaplanacak Sayiyi Giriniz:");
+	scanf("%d", &sayi);
+	
+		for(i=1; i<=sayi; i++)
+			{
+			faktoriyel *= i;
+			}
+	printf("Sonuc: %d", faktoriyel);
+	
+}
+
+
+---------------------------------------------------------
+
+
+// Feet'i santimetreye çevirme
+
+#include <stdio.h>
+
+main(){
+	
+	int ft, cm;
+	
+	printf("Feet giriniz:");
+	scanf("%d", &ft);
+	
+	cm = ft * (30.48);
+	
+	printf("Cm = %d", cm);
+		
+}
+
+
+
+---------------------------------------
+
+
+//C code to find frequency of each digit in a given integer.
+
+#include <stdio.h>
+
+int main(void) {
+
+	int i, number, digit, freq[10] = {0};
+
+	printf("Enter a number: ");
+	scanf("%d", &number);
+  
+	  	while (number > 0) 
+		{
+	    	digit = number % 10;
+	    	freq[digit]++;
+	    	number /= 10;
+	  	}
+
+  		for (i = 0; i < 10; i++) 
+		{
+    		printf("Frequency of %d: %d\n", i, freq[i]);
+  		}
+
+  	return 0;
+}
+
+
+--------------------------------------------------
+
+//C code to find first and last digit of a number.
+
+#include <stdio.h>
+
+int main()
+{
+    int num, first, last;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    last = num % 10;
+
+    while (num >= 10)
+    {
+        num = num / 10;
+    }
+
+    first = num;
+
+    printf("First digit: %d\n", first);
+    printf("Last digit: %d\n", last);
+
+    return 0;
+}
+
+
+-------------------------------------------------
+
+// Girilen 10 sayının toplamini ve carpimini ekrana yazdiran program
+
+#include <stdio.h>
+
+main()
+{
+	int sayi, sayac = 1, toplam = 0, carpim = 1;
+
+		while (sayac <= 10)
+		{
+		printf("Sayi Giriniz:");
+		scanf("%d", &sayi);
+		toplam += sayi;
+		carpim *= sayi;		
+		sayac++;				
+		}
+	printf("Toplam: %d \n", toplam);
+	printf("Carpim: %d", carpim);
+	
+	
+
+
+
+
+}
+
+--------------------------------------------
+
+// 1'den 10'a kadar olan sayilarin karesini bulan program
+
+#include <stdio.h>
+
+int main()
+{
+
+	int kare, i;
+
+	for (i=1; i<=10; i++)
+		{
+		kare = i * i;;
+		printf("%d", kare);
+		}
+	
+			return 0;
+}
+
+
+---------------------------------------------------------
+
+//Herhangi bir sayinin çarpim tablosunu olusturan program
+
+#include <stdio.h>
+
+main()
+{
+	int sayi, i, carpim;
+	
+	printf("Bir Sayi Girniz:");
+	scanf("%d", &sayi);
+	
+		for(i=1; i<=10; i++)
+		{
+			carpim = sayi * i;	
+			printf("%d\n", carpim);
+		}
+		
+}
+
+--------------------------------------------------
+
+//Herhangi bir sayinin çarpim tablosunu olusturan program
+
+#include <stdio.h>
+
+main()
+{
+	int sayi, i, carpim;
+	
+	printf("Bir Sayi Girniz:");
+	scanf("%d", &sayi);
+	
+		for(i=1; i<=10; i++)
+		{
+			carpim = sayi * i;	
+			printf("%d\n", carpim);
+		}
+		
+}
+
+------------------------------------------------------------
+
+//Tum dogal sayilari tersten yazdiran program (n --> 1)
+
+#include <stdio.h>
+
+main()
+{
+	int sayi = 0 ;
+	
+	printf("Bir Sayi Giriniz:");
+	scanf("%d", &sayi);
+	
+		while(sayi > 1)
+		{
+			sayi = sayi - 1;
+			printf("%d\n", sayi);			
+		}
+
+}
+
+
+------------------------------------------------
+
+//C code to check whether a number is palindrome or not
+
+#include <stdio.h>
+
+int main()
+{
+    int num, temp, reversed = 0, rem;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while (temp != 0)
+    {
+        rem = temp % 10;
+        reversed = reversed * 10 + rem;
+        temp = temp / 10;
+    }
+
+    if (num == reversed)
+        printf("%d is a palindrome.\n", num);
+    else
+        printf("%d is not a palindrome.\n", num);
+
+    return 0;
+}
+
+----------------------------------------------------
+//ilk ve son sayiyi yer degistiren program
+
+#include <stdio.h>
+
+int main(void) 
+{
+  int number, first_digit, last_digit;
+
+  printf("Enter a number: ");
+  scanf("%d", &number);
+
+  first_digit = number / 10;
+  
+  	while (first_digit >= 10) 
+	{
+    	first_digit /= 10;
+  	}
+  
+  	last_digit = number % 10;
+
+		number = number / 10;
+		number = number * 10 + first_digit;
+		number = number / 100;
+		number = number * 100 + last_digit;
+
+  			printf("The number with the first and last digits swapped is: %d\n", number);
+
+  return 0;
+}
+
+------------------------------------------------------------------
+
+// uc sayidan en buyugunu bulan program
+
+#include <stdio.h>
+
+main(){
+	
+	int a,b,c;
+	
+	printf("1. Sayiyi Giriniz:");
+	scanf("%d", &a);
+	printf("2. Sayiyi Giriniz:");
+	scanf("%d", &b);
+	printf("3. Sayiyi Giriniz:");
+	scanf("%d", &c);
+	
+	if (a>b && a>c){
+		printf("Birinci Sayi En Buyuk");
+	}
+	else if(b>a && b>c){
+		printf("Ikinci Sayi En Buyuk");
+	}	
+	else{
+		printf("Ucuncu Sayi En Buyuk");
+	}
+
+	
+	
+}
